@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "pregnancysafeos": {
+      "hosting": {
+        "PregnancySafe-Frontend": [
+          "pregnancysafeos"
+        ]
+      }
+    }
+  }
+}

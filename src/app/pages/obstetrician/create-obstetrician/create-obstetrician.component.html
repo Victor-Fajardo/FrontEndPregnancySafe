@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> RappiEdu </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<style type="text/css">
+
+
+  .col-md-2 .fab{
+    font-size: 20px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-left: 10px;
+
+  }
+
+  .fas:hover,.fab:hover{
+    color: #E5E7E9;
+
+  }
+
+  @media(max-width: 992px){
+    .col-md-2 .fab{
+      font-size: 18px;
+      padding-right: 0;
+    }
+  }
+
+  .blanco {
+    color: whitesmoke;
+  }
+
+  .color {
+    background:#AF7AC5 !important;
+  }
+
+
+</style>
+<body>
+<header class="color">
+  <div class="container " id="top">
+    <div class="row">
+      <div class="col-md-10 col-sm-12 col-xs-12">
+        <h5 class="blanco"> <b> <u> OBSTETRICES </u> </b> </h5>
+      </div>
+      <div class="col-md-2 col-sm-12 col-xs-12 text-left">
+        <ul class=" list-group list-group-horizontal">
+          <li><a class="blanco" href="http://localhost:4200/PregnancySafe/homeobstetrician"> CANCELAR </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="card border-dark mb-3">
+  <div class="card-body text-dark">
+    <h5 class="card-title">Agregar Nueva Obstetra</h5>
+  </div>
+  <form (ngSubmit) = "save()">
+    <div class="form-group">
+      <label for="firstName">Nombre Obstetra</label>
+      <input type="text" class="form-control" id="firstName" [(ngModel)]="obstetrician.firstName" name="firstName">
+    </div>
+  </form>
+  <form (ngSubmit) = "save()">
+    <div class="form-group">
+      <label for="lastName">Apellido Obstetra</label>
+      <input type="text" class="form-control" id="lastName" [(ngModel)]="obstetrician.lastName" name="lastName">
+    </div>
+  </form>
+  <form (ngSubmit) = "save()">
+    <div class="form-group">
+      <label for="age">Edad Obstetra</label>
+      <input type="text" class="form-control" id="age" [(ngModel)]="obstetrician.age" name="age">
+    </div>
+  </form>
+  <form (ngSubmit) = "save()">
+    <div class="form-group">
+      <label for="phone">Celular Obstetra</label>
+      <input type="text" class="form-control" id="phone" [(ngModel)]="obstetrician.phone" name="phone">
+    </div>
+  </form>
+  <form (ngSubmit) = "save()">
+    <div class="form-group">
+      <label for="email">Email Obstetra</label>
+      <input type="text" class="form-control" id="email" [(ngModel)]="obstetrician.email" name="email">
+    </div>
+  </form>
+  <form (ngSubmit) = "save()">
+    <div class="form-group">
+      <label for="degree">Grado Obstetra</label>
+      <input type="text" class="form-control" id="degree" [(ngModel)]="obstetrician.degree" name="degree">
+    </div>
+
+  </form>
+  <form (ngSubmit) = "save()">
+    <div class="form-group">
+      <label for="codDegree">Edad Obstetra</label>
+      <input type="text" class="form-control" id="codDegree" [(ngModel)]="obstetrician.codDegree" name="codDegree">
+    </div>
+
+    <div class="form-group">
+      <button type="submit" class="btn btn-success">Registrar</button>
+    </div>
+  </form>
+
+</div>
+
+</body>
+</html>
